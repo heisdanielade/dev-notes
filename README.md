@@ -19,6 +19,7 @@ This repository contains personal documentation and cheat sheets that help me (a
 - [VS Code Setup](misc/vscode-setup.md)
 - [IntelliJ Tips](misc/intellij-tips.md)
 
-## 🚧 Work In Progress
+## 🚧 Disclaimer
+Some contents are AI-generated.
 
 I'll keep updating this as I learn more and as new tools or setups come into play.
