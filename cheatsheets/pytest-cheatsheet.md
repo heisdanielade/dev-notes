@@ -14,11 +14,12 @@ pip install pytest
 
 ## Project Structure Example
 
+```
 your_project/
-│
 ├── my_module.py
 └── tests/
-└── test_my_module.py
+    └── test_my_module.py
+```
 
 ### ✅ Convention:
 
