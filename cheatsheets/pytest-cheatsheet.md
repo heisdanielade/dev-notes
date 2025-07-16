@@ -18,17 +18,18 @@ your_project/
 │
 ├── my_module.py
 └── tests/
-    └── test_my_module.py
+└── test_my_module.py
 
 ### ✅ Convention:
 
-Test files: test_*.py
+Test files: test\_\*.py
 
-Test functions: test_*
+Test functions: test\_\*
 
 ---
 
 ## Writing Your First Test
+
 ```python
 from my_module import add
 
@@ -36,15 +37,19 @@ def test_add():
     assert add(2, 3) == 5
 
 ```
+
 ✅ Use assert to check results.
 
 ---
 
 ## Running Tests
+
 From the project root, run in the terminal:
+
 ```bash
 pytest
 ```
+
 Pytest will automatically find all files starting with **_test_** and run all functions starting with **_test_**.
 
 ---
@@ -59,12 +64,15 @@ def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
         divide(1, 0)
 ```
+
 Use pytest.raises to test for errors.
 
 ---
 
 ## Parametrized Tests
+
 Run multiple inputs through the same test:
+
 ```python
 import pytest
 from my_module import add
@@ -80,10 +88,13 @@ from my_module import add
 def test_add(a, b, expected):
     assert add(a, b) == expected
 ```
+
 One test function = many cases.
 
 ---
+
 ## Using Fixtures
+
 Fixtures provide setup data for tests:
 
 ```python
@@ -97,11 +108,13 @@ def test_divide(sample_numbers):
     a, b = sample_numbers
     assert a / b == 5
 ```
+
 Great for preparing data or state.
 
 ---
 
 ## Advanced (Optional) Commands
+
 - Run with detailed output:
   ```bash
   pytest -v
@@ -118,8 +131,9 @@ Great for preparing data or state.
 ---
 
 ## Tips & Best Practices
-- Name test files **test_*.py**
-- Name test functions **test_***
+
+- Name test files **test\_\*.py**
+- Name test functions **test\_\***
 - Keep tests small and focused.
 - Use fixtures for shared setup.
 - Use parametrize to avoid duplicate code.
@@ -128,27 +142,3 @@ Great for preparing data or state.
 ---
 
 [Official Pytest Documentation](https://docs.pytest.org/en/stable/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
