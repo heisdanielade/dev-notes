@@ -114,6 +114,19 @@ Great for preparing data or state.
 
 ---
 
+## Checking Prints
+You can check if a block of code prints a specific info to the console:
+
+```python
+def open_file(capsys):
+    print("No such file")
+
+    captured = capsys.readouterr()
+    assert "No such file" in captured.out
+```
+
+---
+
 ## Advanced (Optional) Commands
 
 - Run with detailed output:
