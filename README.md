@@ -5,19 +5,23 @@ This repository contains personal documentation and cheat sheets that help me (a
 ## 📌 Contents
 
 ### Cheat Sheets
+
 - [Pytest Cheatsheet](cheatsheets/pytest-cheatsheet.md)
 - [Git Cheatsheet](cheatsheets/git-cheatsheet.md)
 - [SQL Reference](cheatsheets/sql-cheatsheet.md)
 
 ### Spring Boot Guides
+
 - [Spring Boot Project Setup](spring-boot/project-setup.md)
 - [Database Configurations](spring-boot/database-config.md)
 - [Managing Profiles & Environment Variables](spring-boot/profiles-and-env.md)
 
 ### Miscellaneous
-- [VS Code Setup](misc/vscode-setup.md)
+
+- [Python Code Principles](misc/python-clean-code-principles.md)
 
 ## 🚧 Disclaimer
+
 Some contents are AI-generated.
 
 I'll keep updating this as I learn more and as new tools or setups come into play.
