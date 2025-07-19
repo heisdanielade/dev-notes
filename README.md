@@ -13,8 +13,6 @@ This repository contains personal documentation and cheat sheets that help me (a
 ### Spring Boot Guides
 
 - [Spring Boot Project Setup](spring-boot/project-setup.md)
-- [Database Configurations](spring-boot/database-config.md)
-- [Managing Profiles & Environment Variables](spring-boot/profiles-and-env.md)
 
 ### Miscellaneous
 
