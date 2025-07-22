@@ -35,7 +35,10 @@ Test functions: test\_\*
 from my_module import add
 
 def test_add():
-    assert add(2, 3) == 5
+    result = add(2, 3)
+    assert result == 5
+
+    # OR with an AssertionError message: assert result == 5, f"add(2,3) returned {result}, expected 5"
 
 ```
 
@@ -43,7 +46,7 @@ def test_add():
 
 ---
 
-## Running Tests
+## Running a Test
 
 From the project root, run in the terminal:
 
@@ -55,7 +58,7 @@ Pytest will automatically find all files starting with **_test_** and run all fu
 
 ---
 
-## Checking Exceptions
+## Checking an Exception
 
 ```python
 import pytest
@@ -70,7 +73,7 @@ Use pytest.raises to test for errors.
 
 ---
 
-## Parametrized Tests
+## Parametrized Test
 
 Run multiple inputs through the same test:
 
@@ -94,7 +97,7 @@ One test function = many cases.
 
 ---
 
-## Using Fixtures
+## Using Fixture
 
 Fixtures provide setup data for tests:
 
@@ -114,7 +117,22 @@ Great for preparing data or state.
 
 ---
 
-## Checking Prints
+## Expected failure
+
+Tests can be marked as expected to fail and will be grouped as `XFAIL`
+
+```python
+import pytest
+from my_module import divide
+
+@pytest.mark.xfail(reason="ZeroDivision: attempt to divide by zero")
+def test_divide_by_zero(sample_numbers):
+    divide(1, 0)
+```
+
+---
+
+## Checking Console Print
 You can check if a block of code prints a specific info to the console:
 
 ```python
