@@ -80,6 +80,19 @@ A quick reference for working with git from the **terminal**.
     git merge <branch-name>
 ```
 
+- **Delete a branch (locally)**:
+
+```bash
+    git branch -d <branch-name>
+
+```
+
+- **Delete a branch (remotely)**:
+
+```bash
+    git push origin --delete <branch-name>
+```
+
 ## Remote
 
 - **See all remote URLs**:
