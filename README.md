@@ -22,7 +22,7 @@ This repository contains _cheat sheets_, _project setup guides_ and _review of v
 - [REST APIs](topic-reviews/About_REST_APIs.md)
 - [Concurrency vs Parallelism](topic-reviews/Concurrency_vs_Parallelism.md)
 - [Multithreading vs Multiprocessing](topic-reviews/Multithreading_vs_Multiprocessing.md)
-- [Writing Clean Python Code](misc/Python_Clean_Code_Principles.md)
+- [Writing Clean Python Code](topic-reviews/Python_Clean_Code_Principles.md)
 
 ## 🚧 Disclaimer
 
