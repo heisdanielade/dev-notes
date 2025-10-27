@@ -1,4 +1,4 @@
-# 📜 Pytest Cheat Sheet
+# 📜 Pytest Cheatsheet
 
 A quick reference for writing and running unit tests in Python using **pytest**.
 [Official Pytest Documentation](https://docs.pytest.org/en/stable/)
