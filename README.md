@@ -15,13 +15,13 @@ This repository contains _cheat sheets_, _project setup guides_ and _review of v
 - [FastAPI](setup-guides/FastAPI.md)
 - [Spring Boot](setup-guides/Spring_Boot.md)
 
-#### Review Topics
+#### Topic Reviews
 
+- [SDLC & Testing](topic-reviews/Software_Development_And_Testing.md)
 - [HTTP & The Web](topic-reviews/HTTP_And_The_Web.md)
 - [REST APIs](topic-reviews/About_REST_APIs.md)
-
-#### Miscellaneous
-
+- [Concurrency vs Parallelism](topic-reviews/Concurrency_vs_Parallelism.md)
+- [Multithreading vs Multiprocessing](topic-reviews/Multithreading_vs_Multiprocessing.md)
 - [Writing Clean Python Code](misc/Python_Clean_Code_Principles.md)
 
 ## 🚧 Disclaimer
