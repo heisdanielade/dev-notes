@@ -17,7 +17,7 @@ This repository contains _cheat sheets_, _project setup guides_ and _review of v
 
 #### Topic Reviews
 
-- [SDLC & Testing](topic-reviews/Software_Development_And_Testing.md)
+- [SDLC & Testing](topic-reviews/SDLC_And_Testing.md)
 - [HTTP & The Web](topic-reviews/HTTP_And_The_Web.md)
 - [REST APIs](topic-reviews/About_REST_APIs.md)
 - [Concurrency vs Parallelism](topic-reviews/Concurrency_vs_Parallelism.md)
