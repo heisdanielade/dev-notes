@@ -1,31 +1,40 @@
-# 📜 Pytest Basics Cheat Sheet
+# 📜 Pytest Cheat Sheet
 
 A quick reference for writing and running unit tests in Python using **pytest**.
+[Official Pytest Documentation](https://docs.pytest.org/en/stable/)
 
 ---
-
-## Installation
 
 ```bash
-pip install pytest
+pip install pytest                # Install Pytest framework
 ```
 
----
+#### Project Structure Example
 
-## Project Structure Example
-
-```
-your_project/
+```bash
+my_project/
 ├── my_module.py
 └── tests/
     └── test_my_module.py
 ```
 
-### ✅ Convention:
+#### Naming Convention
 
-Test files: test\_\*.py
+- Test files: test\_\*.py
+- Test functions: test\_\*
 
-Test functions: test\_\*
+#### Commands
+
+To run tests
+
+```bash
+pytest -v                         # Show detailed output
+pytest -s                         # Show captured print/log output
+pytest -q                         # Show less output (Quiet mode)
+pytest -v -s                      # Detailed test names and live print output (best for debugging)
+pytest -q --tb=short              # Minimal test output with short tracebacks (best for CI)
+pytest tests/test_my_module.py    # Only run tests in a specific file
+```
 
 ---
 
@@ -133,6 +142,7 @@ def test_divide_by_zero(sample_numbers):
 ---
 
 ## Checking Console Print
+
 You can check if a block of code prints a specific info to the console:
 
 ```python
@@ -145,23 +155,6 @@ def open_file(capsys):
 
 ---
 
-## Advanced (Optional) Commands
-
-- Run with detailed output:
-  ```bash
-  pytest -v
-  ```
-- Show print output:
-  ```bash
-  pytest -s
-  ```
-- Only run tests in a specific file
-  ```bash
-  pytest tests/test_my_module.py
-  ```
-
----
-
 ## Tips & Best Practices
 
 - Name test files **test\_\*.py**
@@ -170,7 +163,3 @@ def open_file(capsys):
 - Use fixtures for shared setup.
 - Use parametrize to avoid duplicate code.
 - Use asserts clearly to explain expectations.
-
----
-
-[Official Pytest Documentation](https://docs.pytest.org/en/stable/)
