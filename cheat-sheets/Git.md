@@ -1,4 +1,4 @@
-# 📜 Git Cheat Sheet
+# 📜 Git Cheatsheet
 
 A quick reference for working with git from the **terminal**. 
 [Official Git Documentation](https://git-scm.com/doc)
