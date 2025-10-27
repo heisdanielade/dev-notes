@@ -1,25 +1,31 @@
-# Dev Notes 📚
+# Vault Notes 📚
 
-This repository contains personal documentation and cheat sheets that help me (and hopefully others) quickly set up and reference important aspects of backend development and beyond.
+This repository contains _cheat sheets_, _project setup guides_ and _review of various software development & engineering topics_, that help me (and hopefully others) quickly learn and reference important aspects of software development.
 
-## 📌 Contents
+## Contents
 
-### Cheat Sheets
+#### Cheat Sheets
 
-- [Pytest Cheatsheet](cheatsheets/pytest-cheatsheet.md)
-- [Git Cheatsheet](cheatsheets/git-cheatsheet.md)
-- [SQL Reference](cheatsheets/sql-cheatsheet.md)
+- [Pytest](cheatsheets/Pytest.md)
+- [Git](cheatsheets/Git.md)
+- [SQL](cheatsheets/SQL.md)
 
-### Spring Boot Guides
+#### Project Setup Guides
 
-- [Spring Boot Project Setup](spring-boot/project-setup.md)
+- [FastAPI](setup-guide/FastAPI.md)
+- [Spring Boot](setup-guide/Spring_Boot.md)
 
-### Miscellaneous
+#### Review Topics
 
-- [Python Code Principles](misc/python-clean-code-principles.md)
+- [HTTP & The Web](review/HTTP_And_The_Web.md)
+- [REST APIs](review/About_REST_APIs.md)
+
+#### Miscellaneous
+
+- [Writing Clean Python Code](misc/Python_Clean_Code_Principles.md)
 
 ## 🚧 Disclaimer
 
-Some contents are AI-generated.
+- Some contents are AI-generated.
 
-I'll keep updating this as I learn more and as new tools or setups come into play.
+- I'll keep updating this as I learn more, and as new tools or setups come into play.

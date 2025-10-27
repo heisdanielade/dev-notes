@@ -62,6 +62,7 @@ A quick reference for working with git from the **terminal**.
 ## TAGS
 
 - **Create**
+
 ```bash
   git tag <tagname>                              # Create a lightweight tag
   git tag -a <tagname> -m "message"              # Create an annotated tag (recommended)
@@ -70,6 +71,7 @@ A quick reference for working with git from the **terminal**.
 ```
 
 - **View**
+
 ```bash
   git tag                                        # List all tags
   git tag -l "v1.*"                              # List tags matching a pattern
@@ -79,15 +81,17 @@ A quick reference for working with git from the **terminal**.
 ```
 
 - **Edit/Move & Delete**
+
 ```bash
   git tag -f <tagname> <commit>                  # Force-move a tag to another commit
   git tag -a <tagname> -f -m "new msg"           # Recreate annotated tag with new message
- 
+
   git tag -d <tagname>                           # Delete a local tag
   git push origin :refs/tags/<tagname>           # Delete a remote tag
 ```
 
 - **Push & Fetch/Pull**
+
 ```bash
   git push origin <tagname>                      # Push a specific tag
   git push origin --tags                         # Push all tags
@@ -101,6 +105,7 @@ A quick reference for working with git from the **terminal**.
 ## CONFIGURATIONS
 
 - **Remote Repo**
+
 ```bash
     git remote -v                                # List all remote URLs
     git remote add origin <repo-url>             # Add a new remote
@@ -111,6 +116,7 @@ A quick reference for working with git from the **terminal**.
 ```
 
 - **User Config**
+
 ```bash
     git config --list                                      # List current config
     git config --global user.name "Your Name"              # Set username
@@ -122,6 +128,7 @@ A quick reference for working with git from the **terminal**.
 ## UNDO CHANGES
 
 - **Commits**
+
 ```bash
   # Working Directory (Unstaged changes)
 
@@ -154,15 +161,15 @@ A quick reference for working with git from the **terminal**.
 ```
 
 - **Selective Undo**
+
 ```bash
   git restore --source=<commit> <file>      # See all HEAD history (even deleted commits)
   git rm --cached <file>                    # Untrack a file (stop Git tracking it)
 ```
 
-- **Reflog** 
+- **Reflog**
+
 ```bash
   git reflog                                # See all HEAD history (even deleted commits)
   git reset --hard <reflog-id>              # Recover from catastrophe
 ```
-
-
