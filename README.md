@@ -6,19 +6,19 @@ This repository contains _cheat sheets_, _project setup guides_ and _review of v
 
 #### Cheat Sheets
 
-- [Pytest](cheatsheets/Pytest.md)
-- [Git](cheatsheets/Git.md)
-- [SQL](cheatsheets/SQL.md)
+- [Pytest](cheat-sheets/Pytest.md)
+- [Git](cheat-sheets/Git.md)
+- [SQL](cheat-sheets/SQL.md)
 
 #### Project Setup Guides
 
-- [FastAPI](setup-guide/FastAPI.md)
-- [Spring Boot](setup-guide/Spring_Boot.md)
+- [FastAPI](setup-guides/FastAPI.md)
+- [Spring Boot](setup-guides/Spring_Boot.md)
 
 #### Review Topics
 
-- [HTTP & The Web](review/HTTP_And_The_Web.md)
-- [REST APIs](review/About_REST_APIs.md)
+- [HTTP & The Web](topic-reviews/HTTP_And_The_Web.md)
+- [REST APIs](topic-reviews/About_REST_APIs.md)
 
 #### Miscellaneous
 
