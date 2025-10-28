@@ -1,9 +1,7 @@
 # 📜 Git Cheat Sheet
 
-A quick reference for working with git from the **terminal**. 
+A quick reference for working with git from the **terminal**.
 [Official Git Documentation](https://git-scm.com/doc)
-
----
 
 ## SETUP (Local)
 

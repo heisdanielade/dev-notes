@@ -3,8 +3,6 @@
 A quick reference for writing and running unit tests in Python using **pytest**.
 [Official Pytest Documentation](https://docs.pytest.org/en/stable/)
 
----
-
 ```bash
 pip install pytest                # Install Pytest framework
 ```
