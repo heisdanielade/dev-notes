@@ -9,7 +9,7 @@ This repository contains _cheat sheets_, _project setup guides_ and _review of v
 - [Pytest](cheat-sheets/Pytest.md)
 - [Git](cheat-sheets/Git.md)
 - [SQL](cheat-sheets/SQL.md)
-- [Python DSA](cheat-sheets/Python.md)
+- [Python DSA Snippets](cheat-sheets/Python_DSA.md)
 
 #### Project Setup Guides
 
