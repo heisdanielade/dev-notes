@@ -57,8 +57,6 @@ It defines how software is developed from start to finish; ensuring quality, eff
   - Address bugs and provide fixes
   - Ensure the software meets user needs over time.
 
-<br>
-
 ### Models of SDLC
 
 #### 1. Waterfall Model
@@ -98,6 +96,8 @@ Each development phase on the left side has a corresponding testing phase on the
                 \    /
                  \  /
 ```
+
+<br>
 
 ## Principles of Software Testing
 
