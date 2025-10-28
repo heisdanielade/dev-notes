@@ -1,0 +1,112 @@
+# 🚀 FastAPI Project Setup (Dockerized Backend)
+
+A step-by-step guide to creating a scalable, containerized FastAPI project, focusing on a clean, production-ready structure using Docker and Pydantic.
+
+## 1. Prerequisites
+
+Make sure you have the following installed:
+
+- **Python 3.10+**
+  - Check: `python3 --version`
+- **Docker** and **Docker Compose**
+  - Check: `docker --version` and `docker compose version`
+- **IDE** (e.g., VS Code)
+- **Git**
+
+## 2. Initial Project Structure
+
+Start by creating a root directory for your project. Files with **(AUTO)** in comments are not created/added manually, although add the other essential directories & files:
+
+```bash
+# FastAPI Project Structure
+├── app/
+│   ├── __init__.py
+│   ├── main.py                          # Entry point for the FastAPI app
+│   ├── core/                            # Core functionality (security, config, etc.)
+│   │   ├── __init__.py
+│   │   ├── config.py                    # Settings & environment variables
+│   │   ├── jwt.py                       # JWT utility
+│   │   ├── logging.py                   # Centralized logging setup
+│   │   ├── rate_limiter.py              # Rate limiter setup
+│   │   └── security.py                  # Password hashing
+│   ├── db/                              # Database layer
+│   │   ├── init_db.py                   # Initialize database with default data (Optional)
+│   │   └── session.py                   # Database session creation
+│   ├── models/                          # SQLAlchemy/SQLModel models
+│   │   ├── __init__.py
+│   │   └── user.py
+│   ├── schemas/                         # Pydantic models
+│   │   ├── __init__.py
+│   │   └── auth_schema.py
+│   ├── services/                        # Business logic layer
+│   │   ├── __init__.py
+│   │   └── auth_service.py
+│   ├── utils/                           # Utility modules
+│   │   ├── __init__.py
+│       ├── handlers.py                  # Exception handlers
+│       ├── helpers.py                   # Helper methods (e.g., masking email, code generation)
+│   │   └── response.py
+│   ├── templates/                       # HTML templates (e.g., for emails)
+│   │   └── email_template.html
+│   └── api/                             # API layer
+│       ├── __init__.py
+│       ├── dependencies.py              # Shared dependencies (auth, db, etc.)
+│       └── v1/
+│           ├── __init__.py
+│           ├── routes/
+│           │   ├── __init__.py
+│           │   └── auth.py              # Auth endpoints
+│           └── api_router.py            # Router for versioned API
+│
+├── tests/                               # Unit & integration tests
+│   ├── __init__.py
+│   └── test_auth.py
+│
+├── scripts/                             # Local and production startup scripts
+│   ├── start-dev.sh                     # Start the app in development mode
+│   └── start.sh                         # Start the app in production mode
+│
+├── .github/
+│   └── workflows/                       # CI/CD pipelines
+│       └── ci.yml                       # GitHub Actions workflow
+│
+├── .devcontainer/                       # VSCode development container setup
+│   └── devcontainer.json
+│
+├── migrations/                          # Alembic migrations (AUTO)
+│   ├── versions/
+│   └── env.py
+│
+├── .env                                 # Environment variables
+├── .gitignore
+├── Makefile                             # Shortcut commands (e.g., build, lint, test, run)
+├── Dockerfile
+├── docker-compose.yml
+├── docker-compose.override.yml          # For local development
+├── alembic.ini                          # Alembic configuration (AUTO)
+├── requirements.txt                     # Project dependencies (or pyproject.toml)
+└── README.md
+
+```
+
+## 3. Setup
+
+- **Define Python Dependencies** (`requirements.txt`):
+
+  - We use `uvicorn` and `gunicorn` together for a robust, asynchronous server setup, typical for production deployment.
+
+- **Core Application** (`main.py`):
+
+  - This file initializes FastAPI and defines a simple health check endpoint.
+
+- **Dockerization (Container Setup)**:
+  - **Dockerfile (Image Building):** We use a lightweight, multi-stage build to keep the final image small.
+  - **Docker Compose (Standard & Override):** These files define our main application service and set up a **PostgreSQL** database service (reflecting your current tech stack).
+
+**Visit:** `http://localhost:{APP_PORT}/docs` → You should see the interactive Swagger UI documentation generated by FastAPI.
+
+## 4. Next Steps & Improvements
+
+- **Database Integration:** Implement `SQLAlchemy` (for ORM) and `Alembic` (for migrations) to connect your FastAPI app to the PostgreSQL container.
+- **Configuration Management:** Use environment variables and the `Settings` class from Pydantic for clean configuration loading.
+- **Testing:** Add `pytest` and define unit and integration tests for your endpoints.
