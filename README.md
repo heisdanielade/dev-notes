@@ -19,12 +19,9 @@ This repository contains _cheat sheets_, _project setup guides_ and _review of v
 #### Topic Reviews
 
 - [SDLC & Testing](topic-reviews/SDLC_And_Testing.md)
-- [HTTP & The Web](topic-reviews/HTTP_And_The_Web.md)
-- [REST APIs](topic-reviews/About_REST_APIs.md)
-- [Concurrency vs Parallelism](topic-reviews/Concurrency_vs_Parallelism.md)
-- [Multithreading vs Multiprocessing](topic-reviews/Multithreading_vs_Multiprocessing.md)
-- [Python Garbage Collection](topic-reviews/Python_Garbage_Collection.md)
 - [Writing Clean Python Code](topic-reviews/Python_Clean_Code_Principles.md)
+<!-- - [Concurrency vs Parallelism](topic-reviews/Concurrency_vs_Parallelism.md)
+- [Multithreading vs Multiprocessing](topic-reviews/Multithreading_vs_Multiprocessing.md) -->
 
 ## 🚧 Disclaimer
 
